@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AllSpark</title>
+    <link rel="stylesheet" href="./Reset/reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
     <!-- 这个是主文件 -->
-     
+    <div class="main-body">
+        <!-- 导航栏 -->
+        <nav class="nav-bar">
+          <div class="nav-btn">
+            <button onclick="showPage('home')">首页</button>
+            <button onclick="showPage('about')">关于我们</button>
+            <button onclick="showPage('contact')">加入我们</button>
+          </div>
+        </nav>
+  
+        <div id="home" class="page active">
+          <!-- 
+                  这个里面用来写首页内容，包括轮播图，介绍，快速通道
+          -->
+  
+          <!-- 这个是轮播图 -->
+          <div class="carousel">
+            <ul class="img-list">
+              <li class="show-img"><img src="./imgs/生活照片1.jpg" /></li>
+              <li><img src="./imgs/生活照片2.jpg" /></li>
+              <li><img src="./imgs/生活照片3.jpg" /></li>
+              <li><img src="./imgs/生活照片4.jpg" /></li>
+            </ul>
+          </div>
+  
+          <!-- 这个是介绍 -->
+           <div class="introduce">
+            <div class="a"></div>
+            <div class="web">前端</div>
+            <div class="java">后端</div>
+            <div class="product">产品</div>
+           </div>
+        </div>
+  
+        <div id="about" class="page">
+          <h1>关于我们</h1>
+          <p>这是关于我们页面的内容。</p>
+        </div>
+  
+        <div id="contact" class="page">
+          <h1>联系我们</h1>
+          <p>这是联系我们页面的内容。</p>
+        </div>
+      </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>

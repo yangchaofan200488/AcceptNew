@@ -1,3 +1,68 @@
 /* 
-    这个文件为页面样式文件
+    这个文件为主页面样式文件
 */
+
+.page {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  /* 给网站主体设置样式 */
+  .main-body {
+    width: 800px;
+    border: 2px black solid;
+    margin: 0 auto;
+  }
+  /* 这是顶部导航栏的样式（包括背景样式） */
+  .nav-bar {
+    height: 400px;
+    width: 800px;
+    background-color: red;
+    background-image: url("./imgs/工作室海报.jpg");
+    background-size: 100% 400px;
+    position: relative;
+  }
+  .nav-btn {
+    height: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+  }
+  .nav-btn button {
+    height: 50px;
+    width: 130px;
+    font-size: 25px;
+    background-color: transparent;
+    border: 0;
+  }
+  .nav-btn button:hover {
+    color: #317bea;
+    cursor: pointer;
+  }
+  /* 这是轮播图样式 */
+  .carousel {
+    height: 350px;
+    width: 700px;
+    margin: 50px auto;
+    position: relative;
+  }
+  .img-list li {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+  .carousel img {
+    width: 700px;
+    height: 350px;
+    object-fit: cover;
+  }
+  li.show-img{
+      z-index: 1;
+      opacity: 1;
+  }
+  /* 这是实验室详细介绍样式 */
+  
