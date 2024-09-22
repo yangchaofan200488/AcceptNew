@@ -138,3 +138,34 @@ a{
 .article li a:hover{
     color: #317bea;
 }
+.introduce2{
+  height: 500px;
+    width: 87.5%;
+    margin: 0 auto;
+    font-size: large;
+}
+/* 这个是加入我们的样式 */
+.join{
+  height: 500px;
+    width: 87.5%;
+    margin: 0 auto;
+    font-size: large;
+}
+.function li{
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+}
+.function{
+  height: 300px;
+  width: 700px;
+  font-size: 25px;
+  color: #317bea;
+  /* background-color: #317bea; */
+}
+.function li a{
+  color: rgb(238, 17, 17);
+}
+.function li a:hover{
+  color: #317bea;
+}
