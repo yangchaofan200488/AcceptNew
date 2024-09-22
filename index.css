@@ -116,3 +116,25 @@
 .box2 div a:hover{
     color: #317bea;
 }
+a{
+    text-decoration: none;
+}
+/* 设置关于我们的详细介绍的页面样式 */
+.article li{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+}
+.article{
+    height: 300px;
+    width: 700px;
+    font-size: 25px;
+    color: #317bea;
+    /* background-color: #317bea; */
+}
+.article li a{
+    color: rgb(238, 17, 17);
+}
+.article li a:hover{
+    color: #317bea;
+}
