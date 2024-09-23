@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AllSpark-join</title>
+    <link rel="stylesheet" href="../Reset/reset.css" />
+    <link rel="stylesheet" href="./join.css" />
+  </head>
+  <body>
+    <div class="join">
+      <!-- 这个是轮播图 -->
+      <div class="carousel">
+        <ul class="img-list">
+          <li class="show-img"><img src="../imgs/生活照片1.jpg" /></li>
+          <li><img src="../imgs/生活照片2.jpg" /></li>
+          <li><img src="../imgs/生活照片3.jpg" /></li>
+          <li><img src="../imgs/生活照片4.jpg" /></li>
+        </ul>
+      </div>
+
+      <div class="join-in">
+        <!-- 这个是加入我们 -->
+        <div class="box1">
+          <div class="a"></div>
+          <div class="b">加入我们</div>
+        </div>
+        <div class="box3">
+          <ul class="function">
+            <hr />
+            <li>> <a href="">纳新报名</a></li>
+            <hr />
+            <li>> <a href="">查询面试进度</a></li>
+            <hr />
+            <li>> <a href="">大佬们的offer</a></li>
+            <hr />
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      setTimeout(function auto() {
+        // 获取当前正在显示的图片
+        const show = document.querySelector(".img-list .show-img");
+
+        // 获取当前正在显示的元素的下一个兄弟元素(获取下一个图片)如果已经是最后一个图片了，就获取第一个图片
+        const show_next =
+          show.nextElementSibling ||
+          document.querySelector(".carousel .img-list li");
+
+        // 修改显示状态
+        show.classList.remove("show-img");
+        show_next.classList.add("show-img");
+
+        setTimeout(auto, 3000);
+      }, 3000);
+    </script>
+  </body>
+</html>

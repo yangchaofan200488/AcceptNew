@@ -3,32 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AllSpark</title>
+    <title>AllSpark-home</title>
     <link rel="stylesheet" href="./Reset/reset.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <!-- 这个是主文件 -->
-    <div class="main-body">
-      <!-- 导航栏 -->
-      <nav class="nav-bar">
-        <div class="nav-btn">
-          <button onclick="showPage('home')">首页</button>
-          <button onclick="showPage('about')">关于我们</button>
-          <button onclick="showPage('contact')">加入我们</button>
-        </div>
-      </nav>
-      <!-- 这个是轮播图 -->
-      <div class="carousel">
-        <ul class="img-list">
-          <li class="show-img"><img src="./imgs/生活照片1.jpg" /></li>
-          <li><img src="./imgs/生活照片2.jpg" /></li>
-          <li><img src="./imgs/生活照片3.jpg" /></li>
-          <li><img src="./imgs/生活照片4.jpg" /></li>
-        </ul>
-      </div>
-      <div id="home" class="page active">
-        <!-- 这个是介绍 -->
+    <!-- 这个是首页文件 -->
+    <div class="home">
+              <!-- 这个是轮播图 -->
+              <div class="carousel">
+                <ul class="img-list">
+                  <li class="show-img"><img src="./imgs/生活照片1.jpg" /></li>
+                  <li><img src="./imgs/生活照片2.jpg" /></li>
+                  <li><img src="./imgs/生活照片3.jpg" /></li>
+                  <li><img src="./imgs/生活照片4.jpg" /></li>
+                </ul>
+              </div>
+     
+        <!-- 这个是简单介绍 -->
         <div class="introduce">
           <div class="box1">
             <div class="a"></div>
@@ -40,6 +32,8 @@
             <div class="product"><a href="">产品</a></div>
           </div>
         </div>
+
+        
         <!-- 这个是快速通道 -->
         <div class="fast-track">
           <div class="box1">
@@ -53,45 +47,8 @@
           </div>
         </div>
       </div>
-
-      <div id="about" class="page">
-        <!-- 这个是关于我们 -->
-        <div class="introduce2">
-            <div class="box1">
-              <div class="a"></div>
-              <div class="b">关于我们</div>
-            </div>
-            <div class="box3">
-              <ul class="article">
-                <hr>
-                <li>> <a href="">web大佬必看指南</a></li><hr>
-                <li>> <a href="">什么？听说你想成为后端一把手</a></li><hr>
-                <li>> <a href="">JAVA霸总独宠我</a></li><hr>
-                <li>> <a href="">开发必打，卑微产品</a></li><hr>
-                <li>> <a href="">工作室学习规划</a></li><hr>
-              </ul>
-            </div>
-          </div>
-      </div>
-        
-      <div id="contact" class="page">
-        <!-- 这个加入我们 -->
-        <div class="join">
-          <div class="box1">
-            <div class="a"></div>
-            <div class="b">加入我们</div>
-          </div>
-          <div class="box3">
-            <ul class="function">
-              <hr>
-              <li>> <a href="">纳新报名</a></li><hr>
-              <li>> <a href="">查询面试进度</a></li><hr>
-              <li>> <a href="">大佬们的offer</a></li><hr>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
   </body>

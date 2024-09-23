@@ -1,19 +1,3 @@
-// js源代码
-
-// 导航栏功能
-function showPage(pageId) {
-    // 获取所有页面元素
-    let pages = document.querySelectorAll('.page');
-    
-    // 隐藏所有页面
-    pages.forEach(function(page) {
-        page.classList.remove('active');
-    });
-
-    // 显示被点击的页面
-    document.getElementById(pageId).classList.add('active');
-}
-
 // 首页轮播图
 setTimeout(function auto(){
     // 获取当前正在显示的图片

@@ -1,14 +1,11 @@
-/* 
-    这个文件为首页样式文件
-*/
-  /* 给网站主体设置样式 */
-  .home{
-    max-width: 800px;
-    border: 2px black solid;
-    margin: 0 auto;
-  }
-  /* 这是轮播图样式 */
-  .carousel {
+/* 设置主体样式 */
+.join{
+  max-width: 800px;
+  border: 2px black solid;
+  margin: 0 auto;
+}
+/* 轮播图 */
+.carousel {
     height: 350px;
     width: 700px;
     margin: 50px auto;
@@ -16,8 +13,6 @@
   }
   .img-list li {
     position: absolute;
-    height: 350px;
-    width: 700px;
     opacity: 0;
     transition: opacity 1.5s;
   }
@@ -30,8 +25,8 @@
       z-index: 1;
       opacity: 1;
   }
-  /* 关于我们的介绍的样式 */
-  .introduce,.fast-track{
+  /* 加入我们的具体样式 */
+  .join-in{
     height: 300px;
     width: 700px;
     margin: 0 auto;
@@ -52,26 +47,24 @@
     font-size: 25px;
     text-align: center;
   }
-  .box2{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 65px;
-  }
-  .box2 div a{
-    display: block;
-    height: 100px;
-    width: 150px;
-    font-size: 50px;
-    text-align: center;
-    line-height: 100px;
-    border: 2px blue solid;
-    border-radius: 25px;
-    color: black;
-  }
-  a{
+  a {
     text-decoration: none;
   }
-  .box2 div a:hover{
-    box-shadow: 0 0 5px blue;
-    color: brown;
+  .function li{
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+  }
+  .function{
+    height: 300px;
+    width: 700px;
+    font-size: 25px;
+    color: #317bea;
+    /* background-color: #317bea; */
+  }
+  .function li a{
+    color: rgb(238, 17, 17);
+  }
+  .function li a:hover{
+    color: #317bea;
   }

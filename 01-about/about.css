@@ -1,0 +1,71 @@
+/* 设置主体样式 */
+.about {
+  width: 800px;
+  border: 2px black solid;
+  margin: 0 auto;
+}
+/* 轮播图 */
+.carousel {
+  height: 350px;
+  width: 700px;
+  margin: 50px auto;
+  position: relative;
+}
+.img-list li {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+.carousel img {
+  width: 700px;
+  height: 350px;
+  object-fit: cover;
+}
+li.show-img {
+  z-index: 1;
+  opacity: 1;
+}
+/* 关于我们的样式 */
+.article li {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+}
+.article {
+  height: 300px;
+  width: 700px;
+  font-size: 25px;
+  color: #317bea;
+  /* background-color: #317bea; */
+}
+.article li a {
+  color: rgb(238, 17, 17);
+}
+.article li a:hover {
+  color: #317bea;
+}
+a {
+  text-decoration: none;
+}
+.introduce {
+  height: 500px;
+  width: 700px;
+  margin: 0 auto;
+  font-size: large;
+  position: relative;
+}
+.box1 .a{
+  height: 50px;
+  width: 50px;
+  background-color: rgb(9, 130, 235);
+}
+.box1 .b{
+  position: absolute;
+  top: 0;
+  left: 50px;
+  height: 50px;
+  width: 120px;
+  line-height: 50px;
+  font-size: 25px;
+  text-align: center;
+}
