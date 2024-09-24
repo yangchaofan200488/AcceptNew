@@ -85,3 +85,9 @@ a {
   color: #317bea;
   box-shadow: 0 0 5px #317bea;
 }
+/* 设置头部背景图片样式 */
+.head img{
+  height: 100px;
+  width: 800px;
+  object-fit: cover;
+}
