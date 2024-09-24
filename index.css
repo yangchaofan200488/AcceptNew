@@ -1,130 +1,209 @@
 /* 
     这个文件为首页样式文件
 */
-  /* 给网站主体设置样式 */
-  .home{
-    max-width: 800px;
-    border: 2px black solid;
-    margin: 0 auto;
-  }
-  /* 这是首页导航栏的样式 */
-  .nav-bar{
-    height: 100px;
-    width: 800px;
-    /* background-color: red; */
-    display: flex;
-  }
-  .nav-bar img{
-    height: 100px;
-    width: 100px;
-  }
-  .text{
-    height: 100px;
-    width: 500px;
-    font-size: 25px;
-    line-height: 100px;
-    font-style: italic;
-  }
-  .hid-box{
-    position: relative;
-  }
-  .hid-box img{
-    height: 30px;
-    width: 30px;
-    margin-top: 40px;
-    margin-left: 40px;
-    font-size: 2px;
-  }
-  .more{
-    position: absolute;
-    display: none;
-    height: 100px;
-    width: 100px;
-    z-index: 9999;
-    top: 50px;
-    right: -101px;
-    border: 1px black solid;
-  }
-  .hid-box:hover .more{
-    display: block;
-  }
-  .more a{
-    display: block;
-    font-size: 20px;
-    height: 50px;
-    width: 100px;
-    text-align: center;
-    line-height: 50px;
-    color: black;
-  }
-  .hid-box:hover .more a:hover{
-    color: aqua;
-  }
-  /* 这是轮播图样式 */
-  .carousel {
-    height: 350px;
-    width: 700px;
-    margin: 50px auto;
-    position: relative;
-  }
-  .img-list li {
-    position: absolute;
-    height: 350px;
-    width: 700px;
+/* 动画样式 */
+.home{
+  display: none;
+}
+.outter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+}
+.text-list ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-list ul li {
+  list-style: none;
+  float: left;
+  font-family: Arial;
+  color: rgb(50, 128, 239);
+  font-size: 60px;
+  font-weight: bold;
+  transform: rotateY(90deg);
+  transform-origin: left;
+  animation: dh 4s infinite;
+  text-shadow: 15px 15px 10px black;
+}
+@keyframes dh {
+  0% {
     opacity: 0;
-    transition: opacity 1.5s;
+    transform: rotateY(90deg) translateX(-30px);
   }
-  .carousel img {
-    width: 700px;
-    height: 350px;
-    object-fit: cover;
+  50% {
+    opacity: 1;
+    transform: rotateY(0deg) translateX(30px) scale(0.4);
   }
-  li.show-img{
-      z-index: 1;
-      opacity: 1;
+  100% {
+    opacity: 0;
+    transform: rotateY(0deg);
   }
-  /* 关于我们的介绍的样式 */
-  .introduce,.fast-track{
-    height: 300px;
-    width: 700px;
-    margin: 0 auto;
-    position: relative;
-  }
-  .box1 .a{
-    height: 50px;
-    width: 50px;
-    background-color: rgb(9, 130, 235);
-  }
-  .box1 .b{
-    position: absolute;
-    top: 0;
-    left: 50px;
-    height: 50px;
-    width: 120px;
-    line-height: 50px;
-    font-size: 25px;
-    text-align: center;
-  }
-  .box2{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 65px;
-  }
-  .box2 div a{
-    display: block;
-    height: 100px;
-    width: 150px;
-    font-size: 50px;
-    text-align: center;
-    line-height: 100px;
-    border: 2px blue solid;
-    border-radius: 25px;
-    color: black;
-  }
-  a{
-    text-decoration: none;
-  }
-  .box2 div a:hover{
-    box-shadow: 0 0 5px blue;
-    color: brown;
-  }
+}
+.text-list ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+.text-list ul li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.text-list ul li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.text-list ul li:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.text-list ul li:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.text-list ul li:nth-child(6) {
+  animation-delay: 1s;
+}
+.text-list ul li:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.text-list ul li:nth-child(8) {
+  animation-delay: 1.4s;
+}
+.img-box img {
+  height: 200px;
+  width: 200px;
+}
+.img-box {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 270px;
+}
+/* 给网站主体设置样式 */
+.home {
+  max-width: 800px;
+  border: 2px black solid;
+  margin: 0 auto;
+}
+/* 这是首页导航栏的样式 */
+.nav-bar {
+  height: 100px;
+  width: 800px;
+  /* background-color: red; */
+  display: flex;
+}
+.nav-bar img {
+  height: 100px;
+  width: 100px;
+}
+.text {
+  height: 100px;
+  width: 500px;
+  font-size: 25px;
+  line-height: 100px;
+  font-style: italic;
+}
+.hid-box {
+  position: relative;
+}
+.hid-box img {
+  height: 30px;
+  width: 30px;
+  margin-top: 40px;
+  margin-left: 40px;
+  font-size: 2px;
+}
+.more {
+  position: absolute;
+  display: none;
+  height: 100px;
+  width: 100px;
+  z-index: 9999;
+  top: 50px;
+  right: -101px;
+  border: 1px black solid;
+}
+.hid-box:hover .more {
+  display: block;
+}
+.more a {
+  display: block;
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  line-height: 50px;
+  color: black;
+}
+.hid-box:hover .more a:hover {
+  color: aqua;
+}
+/* 这是轮播图样式 */
+.carousel {
+  height: 350px;
+  width: 700px;
+  margin: 50px auto;
+  position: relative;
+}
+.img-list li {
+  position: absolute;
+  height: 350px;
+  width: 700px;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+.carousel img {
+  width: 700px;
+  height: 350px;
+  object-fit: cover;
+}
+li.show-img {
+  z-index: 1;
+  opacity: 1;
+}
+/* 关于我们的介绍的样式 */
+.introduce,
+.fast-track {
+  height: 300px;
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+.box1 .a {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(9, 130, 235);
+}
+.box1 .b {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  height: 50px;
+  width: 120px;
+  line-height: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+.box2 div a {
+  display: block;
+  height: 100px;
+  width: 150px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+  border: 2px blue solid;
+  border-radius: 25px;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+.box2 div a:hover {
+  box-shadow: 0 0 5px blue;
+  color: brown;
+}
