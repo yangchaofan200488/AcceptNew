@@ -7,6 +7,59 @@
     border: 2px black solid;
     margin: 0 auto;
   }
+  /* 这是首页导航栏的样式 */
+  .nav-bar{
+    height: 100px;
+    width: 800px;
+    /* background-color: red; */
+    display: flex;
+  }
+  .nav-bar img{
+    height: 100px;
+    width: 100px;
+  }
+  .text{
+    height: 100px;
+    width: 500px;
+    font-size: 25px;
+    line-height: 100px;
+    font-style: italic;
+  }
+  .hid-box{
+    position: relative;
+  }
+  .hid-box img{
+    height: 30px;
+    width: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 2px;
+  }
+  .more{
+    position: absolute;
+    display: none;
+    height: 100px;
+    width: 100px;
+    z-index: 9999;
+    top: 50px;
+    right: -101px;
+    border: 1px black solid;
+  }
+  .hid-box:hover .more{
+    display: block;
+  }
+  .more a{
+    display: block;
+    font-size: 20px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+  }
+  .hid-box:hover .more a:hover{
+    color: aqua;
+  }
   /* 这是轮播图样式 */
   .carousel {
     height: 350px;
