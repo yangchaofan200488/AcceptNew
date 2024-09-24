@@ -103,40 +103,79 @@
   line-height: 100px;
   font-style: italic;
 }
-.hid-box {
+.right{
+  height: 100px;
+  width: 200px;
   position: relative;
+  /* background-color: green; */
 }
-.hid-box img {
+.hidbox{
+  position: relative;
+  width: 50px;
+  background-color: rgb(215, 211, 211);
+  margin: 0 auto;
+  margin-top: 35px;
+  /* border-radius: 25px; */
+  z-index: 9999;
+}
+.hidbox ul{
+  height: 0px;
+  overflow: hidden; 
+}
+.sp1{
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  top: 15px;
+  left: 11px;
+  pointer-events: none;
+}
+.sp2{
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  top: 30px;
+  left: 11px;
+  pointer-events: none;
+}
+.hidbox input{
   height: 30px;
   width: 30px;
-  margin-top: 40px;
-  margin-left: 40px;
-  font-size: 2px;
+  margin-top: 10px;
+  margin-left: 10px;
+  opacity: 0;
 }
-.more {
-  position: absolute;
-  display: none;
+.hidbox input:checked ~ul{
   height: 100px;
-  width: 100px;
-  z-index: 9999;
-  top: 50px;
-  right: -101px;
-  border: 1px black solid;
+  width: 125px;
+  background-color: rgb(215, 211, 211);
+  transition: height 1s;
 }
-.hid-box:hover .more {
-  display: block;
+.hidbox input:checked ~span{
+  background-color: red;
 }
-.more a {
-  display: block;
+.hidbox ul li a{
+  color: blue;
   font-size: 20px;
-  height: 50px;
-  width: 100px;
-  text-align: center;
-  line-height: 50px;
-  color: black;
 }
-.hid-box:hover .more a:hover {
-  color: aqua;
+.hidbox ul li{
+  margin-top: 20px;
+  text-align: center;
+}
+.hidbox ul li a:hover{
+  color: red;
+}
+.hidbox input:checked ~.sp1{
+  transform: rotate(-45deg);
+  top: 20px;
+}
+.hidbox input:checked ~.sp2{
+  transform: rotate(45deg);
+  top: 20px;
 }
 /* 这是轮播图样式 */
 .carousel {
