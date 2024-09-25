@@ -1,0 +1,141 @@
+/* 给网站主体设置样式 */
+.main-body {
+  width: 800px;
+  /* border: 2px black solid; */
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+/* 这是顶部导航栏的样式（包括背景样式） */
+.header {
+  height: 120px;
+  width: 800px;
+  background: url("../imgs/头部图片.png") no-repeat;
+  background-size:cover;
+}
+
+/* 返回按钮 */
+.return {
+  height: 30px;
+  width: 70px;
+  font-size: 25px;
+  margin-top: 40px;
+}
+.return:hover{
+  color: #317bea;
+  cursor: pointer;
+}
+
+.content {
+  font-size: 25px;
+}
+/* 欢迎查看 */
+.welcome {
+  display: inline-block;
+  height: 40px;
+  margin: 30px 0;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+.detail {
+  height: 40px;
+  padding-left: 70px;
+}
+.detail-box{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: #317bea;
+}
+.detail-text {
+  display: inline-block;
+  height: 20px;
+}
+
+/* 面试结果颜色渲染 */
+.success{
+  color: rgb(33, 210, 31);
+}
+.fail{
+  color: rgb(255, 68, 0);
+}
+
+.icon-gou {
+  color: rgb(33, 210, 31);
+  font-size: 50px;
+}
+.icon-cuowu{
+  color: rgb(255, 68, 0);
+  font-size: 48px;
+}
+
+
+.content-main {
+  display: flex;
+}
+
+.status {
+  width: 100px;
+  text-align: center;
+  padding-left: 40px;
+  padding-top: 60px;
+}
+
+.line {
+  padding: 0;
+  margin: 0 auto;
+  height: 150px;
+  width: 2px;
+  border-right: 2px solid rgb(142, 142, 142);
+}
+
+.message {
+  height: 750px;
+  width: 500px;
+  padding: 0 25px;
+}
+
+.msg-box {
+  width: 410px;
+  height: 130px;
+  background-color: rgb(242, 242, 242);
+  margin-top: 15px;
+  margin-bottom: 70px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.msg-statu {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  font-style: italic;
+  background-color: #ffffff;
+}
+
+.footer {
+  margin: 0 auto;
+  height: 50px;
+  width: 700px;
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-decoration: line-through;
+}
+.footer-success {
+  /* display: none; */
+  text-shadow: rgb(129, 176, 242) 3px 3px 5px;
+}
+.footer-fail {
+  display: none;
+  text-shadow: rgb(203, 65, 65) 3px 3px 5px;
+}
