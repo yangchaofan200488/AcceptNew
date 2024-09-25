@@ -1,40 +1,49 @@
 /* 网上抄的 */
 
 html {
-  font-size: 16px; /* 默认根元素字体大小 */
+  font-size: 16px;
+  /* 默认根元素字体大小 */
 }
 
 h1 {
-  font-size: 3rem; /* 40px */
+  font-size: 3rem;
+  /* 40px */
 }
 
 h2 {
-  font-size: 2.1rem; /* 28px */
+  font-size: 2.1rem;
+  /* 28px */
 }
 
 h4 {
-  font-size: 1.35rem; /* 18px */
+  font-size: 1.35rem;
+  /* 18px */
 }
 
 p {
-  font-size: 1.2rem; /* 16px */
+  font-size: 1.2rem;
+  /* 16px */
 }
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 2.4rem; /* 32px */
+    font-size: 2.4rem;
+    /* 32px */
   }
 
   h2 {
-    font-size: 1.8rem; /* 24px */
+    font-size: 1.8rem;
+    /* 24px */
   }
 
   h4 {
-    font-size: 1.2rem; /* 16px */
+    font-size: 1.2rem;
+    /* 16px */
   }
 
   p {
-    font-size: 1.05rem; /* 14px */
+    font-size: 1.05rem;
+    /* 14px */
   }
 }
 
@@ -44,16 +53,19 @@ body {
   padding: 0;
   color: #333;
 }
+
 /* header */
 header {
   background-color: #fff;
   padding: 30px 0;
   text-align: center;
 }
+
 .container {
   width: 100%;
   margin: auto;
-  overflow: hidden; /* 背景图 */
+  overflow: hidden;
+  /* 背景图 */
 }
 
 header h1 {
@@ -63,14 +75,17 @@ header h1 {
 .title-with-background {
   background: linear-gradient(to bottom, rgb(127, 217, 127), white);
   color: #0c0c0c;
-  padding: 40px; /*从h1向外扩展  */
+  padding: 40px;
+  /*从h1向外扩展  */
   text-align: center;
   /* font-size: 3em; */
   font-weight: bold;
 }
+
 .title-with-background h1 {
   line-height: 2;
 }
+
 .title-with-background h4 {
   /* font-size: calc(0.5rem+1vw); */
   line-height: 1.6;
@@ -92,10 +107,13 @@ header h1 {
   overflow: hidden;
   margin: 0 auto 10px;
 }
+
 .headerimg {
-  max-width: 100%; /*响应式限制图片 */
+  max-width: 100%;
+  /*响应式限制图片 */
   height: auto;
 }
+
 /* article */
 .article {
   background-color: #f9f9f9;
@@ -105,10 +123,12 @@ header h1 {
   border-radius: 32px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
+
 .article h2 {
   font-size: calc(1.1rem + 1.2vw);
   margin-bottom: 1rem;
 }
+
 article .jianqie {
   display: flex;
   justify-content: center;
@@ -121,25 +141,30 @@ article .jianqie {
 }
 
 .article img {
-  max-width: 100%; /*响应式限制图片 */
+  max-width: 100%;
+  /*响应式限制图片 */
   border-radius: 5%;
   height: auto;
   margin-bottom: 10px;
 }
+
 .article p {
   /* font-size: calc(0.9rem + 1vw); */
   line-height: 1.6;
   margin-bottom: 0.7rem;
 }
+
 article ul {
   padding-left: 0;
   margin-bottom: 0.7rem;
   list-style: none;
 }
+
 article ul li a {
   text-decoration: none;
   color: rgb(66, 118, 155);
 }
+
 article ul li a:hover {
   text-decoration: none;
   color: rgb(146, 199, 237);
@@ -198,6 +223,7 @@ article ul li a:hover {
   background-image: url(../svg/top-2.svg);
   /* 浅色引用地址 */
 }
+
 /* 页脚 */
 footer {
   width: 100%;
