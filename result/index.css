@@ -26,7 +26,19 @@
   cursor: pointer;
 }
 
+.pleaseToApply{
+  display: none;
+  height: 500px;
+  line-height: 500px;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
 .content {
+  display: none;
   font-size: 25px;
 }
 /* 欢迎查看 */
@@ -82,7 +94,12 @@
   padding-top: 60px;
 }
 
+.statu{
+  display: none;
+}
+
 .line {
+  display: none;
   padding: 0;
   margin: 0 auto;
   height: 150px;
@@ -91,7 +108,7 @@
 }
 
 .message {
-  height: 750px;
+  /* height: 750px; */
   width: 500px;
   padding: 0 25px;
 }
@@ -105,7 +122,8 @@
   border-radius: 30px;
   box-sizing: border-box;
   padding: 40px 50px;
-  display: flex;
+  display: none;
+  /* 展示时 display 改为 flex */
   justify-content: space-between;
   align-items: center;
 }
@@ -132,7 +150,7 @@
   text-decoration: line-through;
 }
 .footer-success {
-  /* display: none; */
+  display: none;
   text-shadow: rgb(129, 176, 242) 3px 3px 5px;
 }
 .footer-fail {

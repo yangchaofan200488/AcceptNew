@@ -15,21 +15,26 @@
     <div class="main">
       <!-- 返回 -->
       <div class="return">&lt;返回</div>
+      <div class="pleaseToApply">你尚未报名！请填写报名表后，再进行查询.</div>
       <div class="content">
-        <span class="welcome">亲爱的 xxx 同学：</span>
+        <span class="welcome">亲爱的<span class="userName"></span>同学：</span>
         <div class="detail">
           <div class="detail-box"></div>
           <div class="detail-text">进展详情</div>
         </div>
         <div class="content-main">
           <div class="status">
-            <div class="statu iconfont icon-gou"></div>
-            <div class="line"></div>
-            <div class="statu iconfont icon-gou"></div>
-            <div class="line"></div>
-            <div class="statu iconfont icon-gou"></div>
-            <div class="line"></div>
-            <div class="statu iconfont icon-cuowu"></div>
+            <!-- 报名申请 -->
+            <div class="statu statu0 iconfont icon-gou"></div>
+            <div class="line line1"></div>
+            <!-- 第一次面试 -->
+            <div class="statu statu1 iconfont"></div>
+            <div class="line line2"></div>
+            <!-- 第二次面试 -->
+            <div class="statu statu2 iconfont"></div>
+            <div class="line line3"></div>
+            <!-- 第三次面试 -->
+            <div class="statu statu3 iconfont"></div>
           </div>
           <div class="message">
             <div class="msg-box">
@@ -38,15 +43,15 @@
             </div>
             <div class="msg-box">
               <div class="msg">第一次面试</div>
-              <div class="msg-statu success">已通过</div>
+              <div class="msg-statu">已通过</div>
             </div>
             <div class="msg-box">
               <div class="msg">第二次面试</div>
-              <div class="msg-statu success">已通过</div>
+              <div class="msg-statu">已通过</div>
             </div>
             <div class="msg-box">
               <div class="msg">第三次面试</div>
-              <div class="msg-statu fail">未通过</div>
+              <div class="msg-statu">未通过</div>
             </div>
           </div>
         </div>
@@ -59,6 +64,7 @@
       期待你前来霸面加入我们
     </div>
   </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="./index.js"></script>
 </body>
 </html>
