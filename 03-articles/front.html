@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Web大佬必看指南</title>
+  </head>
+  <body>
+    <header>
+      <div class="container title-with-background">
+        <h1>Web大佬必看指南</h1>
+        <h4>AllSpark工作室学习方向之前端篇</h2>
+        <div class="yuanxing">
+          <img
+            class="headerimg"
+            src="../imgs/Web2.png"
+            alt="header的图"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- 内容 -->
+    <!-- 1 -->
+    <section class="container">
+      <article class="article">
+        <h2>Web前端开发简介</h2>
+        <p>
+       Web前端开发就是负责网站或网页的设计和制作，它让网页在浏览器里看起来漂亮、用起来方便。简单来说，前端开发者就是用HTML、CSS和JavaScript这些技术来搭建用户能直接看到和互动的网页部分。</p>
+        <div class="jianqie">
+          <img src="../imgs/front-jieshao.png" alt="前端开发简介配图" />
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="article">
+        <h2>技术学习</h2>
+        <p>Web前端开发是构建和设计网站用户界面的过程，涉及HTML、CSS和JavaScript等技术。<Br>下面是部分要掌握的知识，点进去开始学习吧！</p>
+        <ul class="lists">
+          <li class="listsItem"><a href="https://www.bilibili.com/video/BV14J4114768">HTML & CSS</a></li>
+          <li class="listsItem"><a href="https://b23.tv/5dJj1up">JavaScript</a></li>
+          <li class="listsItem"><a href=" https://b23.tv/Eqzaq1k">前端框架 (如React,Vue)</a></li>
+          <li class="listsItem"><a href="https://b23.tv/MD5veTP">建构工具 (如Webpack,Vite)</a></li>
+          <li class="listsItem"><a href="https://b23.tv/oQ96SCR">版本控制 (如Git)</a></li>
+        </ul>
+         <div class="jianqie">
+          <img src="../imgs/studypath11.png" alt="学习路径图" />
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="article">
+        <h2>推荐网站</h2>
+        <p>前端知识技术更新快，需要我们及时学习新技术。网络上教程资源丰富，下面是几个常用到的文档和网站，希望对你有帮助。<Br>注：部分网站需要科学上网。</p>
+        <ul class="lists">
+          <li class="listsItem"><a href="https://developer.mozilla.org/zh-CN/">MDN Web Docs</a></li>
+          <li class="listsItem"><a href="http://www.w3cschool.cn/">W3cschools</a></li>
+         <li class="listsItem"><a href="https://www.bilibili.com">B站</a></li>
+        </ul>
+        <div class="jianqie">
+          <img src="../imgs/w3c.png" alt="推荐资源图" />
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="article">
+        <h2>常用工具</h2>
+        <ul class="lists">
+          <p>以下是一些前端常用的开发工具,b站上有具体的安装和玩转教程。</p>
+          <li class="listsItem">代码编辑器：VS Code</li>
+          <li class="listsItem">版本控制系统：Git</li>
+          <li class="listsItem">包管理器：npm、Yarn</li>
+          <li class="listsItem">浏览器开发者工具：Chrome DevTools</li>
+        </ul>
+        <div class="jianqie">
+          <img src="../imgs/Vscode.jpg" alt="推荐资源的图" />
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="article">
+        <h2>实战项目</h2>
+        <p>通过实际项目练习，提升前端开发技能吧。入门可以仿写静态页面如：小米、京东官网，进阶可以去Github找项目练手。Github上有丰富的前端练习项目，适合夯实CSS、HTML和JavaScript等前端基础。</p>
+        <div class="jianqie">
+          <img src="../imgs/lianxi222.jpg" alt="实战项目图" />
+        </div>
+      </article>
+    </section>
+
+    <!-- 以下是页脚 无需变更 -->
+    <footer>
+      <span>——产品编织生活 代码改变未来——</span>
+      <br />
+      <br />
+      <span class="footer-con">版权所有 © AllSpark实验室</span>
+      <br />
+      <span class="footer-con">保留所有权利 </span>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      //侧边拦
+      window.onscroll = function () {
+        var scrollPos =
+          window.pageYOffset || document.documentElement.scrollTop;
+        var sidebar = document.getElementById("sidebar");
+        if (scrollPos >= 200) {
+          sidebar.classList.add("show");
+        } else {
+          sidebar.classList.remove("show");
+        }
+      };
+    </script>
+  </body>
+</html>

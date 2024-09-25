@@ -1,0 +1,217 @@
+/* 网上抄的 */
+
+html {
+  font-size: 16px; /* 默认根元素字体大小 */
+}
+
+h1 {
+  font-size: 3rem; /* 40px */
+}
+
+h2 {
+  font-size: 2.1rem; /* 28px */
+}
+
+h4 {
+  font-size: 1.35rem; /* 18px */
+}
+
+p {
+  font-size: 1.2rem; /* 16px */
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.4rem; /* 32px */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* 24px */
+  }
+
+  h4 {
+    font-size: 1.2rem; /* 16px */
+  }
+
+  p {
+    font-size: 1.05rem; /* 14px */
+  }
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+/* header */
+header {
+  background-color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden; /* 背景图 */
+}
+
+header h1 {
+  margin: 0;
+}
+
+.title-with-background {
+  background: linear-gradient(to bottom, rgb(127, 217, 127), white);
+  color: #0c0c0c;
+  padding: 40px; /*从h1向外扩展  */
+  text-align: center;
+  /* font-size: 3em; */
+  font-weight: bold;
+}
+.title-with-background h1 {
+  line-height: 2;
+}
+.title-with-background h4 {
+  /* font-size: calc(0.5rem+1vw); */
+  line-height: 1.6;
+  color: grey;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  /* font-size: calc(0.704rem + 0.768vw); */
+}
+
+/* @media screen and (max-width: 768px) {
+  .title-with-background {
+    font-size: 1.5em; 
+  }
+} */
+/* headerimg */
+.yuanxing {
+  width: 60%;
+  border-radius: 42%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+.headerimg {
+  max-width: 100%; /*响应式限制图片 */
+  height: auto;
+}
+/* article */
+.article {
+  background-color: #f9f9f9;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 20px;
+  padding: 2rem;
+  border-radius: 32px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+.article h2 {
+  font-size: calc(1.1rem + 1.2vw);
+  margin-bottom: 1rem;
+}
+article .jianqie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  /* min-height: 100vh; */
+  /* overflow: hidden; */
+  margin: 0 auto;
+}
+
+.article img {
+  max-width: 100%; /*响应式限制图片 */
+  border-radius: 5%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.article p {
+  /* font-size: calc(0.9rem + 1vw); */
+  line-height: 1.6;
+  margin-bottom: 0.7rem;
+}
+article ul {
+  padding-left: 0;
+  margin-bottom: 0.7rem;
+  list-style: none;
+}
+article ul li a {
+  text-decoration: none;
+  color: rgb(66, 118, 155);
+}
+article ul li a:hover {
+  text-decoration: none;
+  color: rgb(146, 199, 237);
+}
+
+/*  */
+/* 侧边栏 */
+#sidebar {
+  width: 36px;
+  border: 0.1px rgb(195, 194, 194) solid;
+  height: 36px;
+  background-color: #f1f1f1;
+  position: fixed;
+  border-radius: 18px 18px 18px 18px;
+  /* 可选：添加圆角 */
+
+  /* 固定侧边栏位置 */
+  right: 10px;
+  /* 侧边栏位于屏幕左侧 */
+  bottom: 150px;
+  /* 侧边栏顶部与屏幕顶部对齐 */
+  font-size: 13px;
+
+  box-shadow: 0 0 2px rgb(157, 157, 157);
+  display: none;
+}
+
+#sidebar.show {
+  display: block;
+  /* 当添加.show类时显示 */
+}
+
+#sidebar a {
+  height: 28px;
+  width: 28px;
+  margin-top: 2.9px;
+  margin-left: 2.5px;
+  justify-content: center;
+  /* 水平居中，如果需要的话 */
+  display: flex;
+  align-items: center;
+  /* 垂直居中 */
+  color: rgb(255, 255, 255);
+  background-size: cover;
+  background-image: url(../svg/top-1.svg);
+  /* 深色文件引用地址 */
+  background-position: center;
+}
+
+#sidebar:hover {
+  background-color: #c6c5c5;
+  border: 0.5px #999 solid;
+}
+
+#sidebar a:hover {
+  background-image: url(../svg/top-2.svg);
+  /* 浅色引用地址 */
+}
+/* 页脚 */
+footer {
+  width: 100%;
+  background-color: #dadada;
+  box-shadow: 0 0 4px #abafaf;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 1rem;
+  color: #272727;
+}
+
+.footer-con {
+  padding-top: 20px;
+  font-size: 14px;
+  color: #828f8f;
+}
