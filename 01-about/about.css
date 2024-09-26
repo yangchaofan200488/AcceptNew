@@ -1,31 +1,87 @@
 /* 设置主体样式 */
 .about {
-  width: 800px;
-  border: 2px black solid;
-  margin: 0 auto;
+    max-width: 800px;
+    border: 2px black solid;
+    margin: 0 auto;
 }
 /* 轮播图 */
 .carousel {
-  height: 350px;
-  width: 700px;
-  margin: 50px auto;
+  width: 350px;
+  height: 175px;
+  margin: 20px auto;
   position: relative;
 }
 .img-list li {
   position: absolute;
+  height: 175px;
+  width: 350px;
   opacity: 0;
   transition: opacity 1.5s;
 }
 .carousel img {
-  width: 700px;
-  height: 350px;
+  width: 350px;
+  height: 175px;
   object-fit: cover;
 }
 li.show-img {
   z-index: 1;
   opacity: 1;
 }
+@media screen and (min-width: 750px) {
+  .carousel,.img-list li,.carousel img{
+    height: 350px;
+    width: 700px;
+  }
+  .carousel{
+    margin: 50px auto;
+  }
+}
 /* 关于我们的样式 */
+.introduce,
+.fast-track {
+  height: 300px;
+  width: 350px;
+  margin: 20px auto;
+  position: relative;
+}
+.box1 .a {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(9, 130, 235);
+}
+.box1 .b {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  height: 30px;
+  /* width: 120px; */
+  line-height: 30px;
+  font-size: 25px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.article li {
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+}
+.article {
+  margin-top: 25px;
+  height: 175px;
+  width: 350px;
+  font-size: 15px;
+  color: #317bea;
+  /* background-color: #317bea; */
+}
+.article li a {
+  color: rgb(238, 17, 17);
+}
+.article li a:hover {
+  color: #317bea;
+}
+@media screen and (min-width: 750px) {
 .article li {
   height: 50px;
   width: 100%;
@@ -43,9 +99,6 @@ li.show-img {
 }
 .article li a:hover {
   color: #317bea;
-}
-a {
-  text-decoration: none;
 }
 .introduce {
   height: 500px;
@@ -69,25 +122,40 @@ a {
   font-size: 25px;
   text-align: center;
 }
+}
 /* 设置返回按钮样式 */
 .back button{
-  height: 50px;
-  width: 100px;
+  height: 35px;
+  width: 60px;
   background-color: transparent;
   cursor: pointer;
   border: 2px #317bea solid;
   border-radius: 25px;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-left: 30px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .back button:hover{
   color: #317bea;
   box-shadow: 0 0 5px #317bea;
 }
+@media screen and (min-width: 750px) {
+  .back button{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+}
 /* 设置头部背景图片样式 */
 .head img{
-  height: 100px;
-  width: 800px;
+  height: 80px;
+  width: 100%;
   object-fit: cover;
+}
+@media screen and (min-width: 750px) {
+  .head img{
+    height: 100px;
+    width: 800px;
+  }
 }

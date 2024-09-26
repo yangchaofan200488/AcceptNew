@@ -1,8 +1,9 @@
 /* 
     这个文件为首页样式文件
 */
+
 /* 动画样式 */
-.home{
+.home {
   display: none;
 }
 .outter {
@@ -24,12 +25,26 @@
   float: left;
   font-family: Arial;
   color: rgb(50, 128, 239);
-  font-size: 60px;
+  font-size: 30px;
   font-weight: bold;
   transform: rotateY(90deg);
   transform-origin: left;
   animation: dh 4s infinite;
-  text-shadow: 15px 15px 10px black;
+  height: 30px;
+  width: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 10px 10px 5px black;
+}
+@media screen and (min-width: 750px) {
+  .text-list ul li {
+    font-size: 60px;
+    text-shadow: 15px 15px 10px black;
+    height: 60px;
+    width: 45px;
+    line-height: 60px;
+    text-align: center;
+  }
 }
 @keyframes dh {
   0% {
@@ -79,37 +94,54 @@
   margin: 0 auto;
   margin-top: 270px;
 }
+
 /* 给网站主体设置样式 */
 .home {
   max-width: 800px;
   border: 2px black solid;
   margin: 0 auto;
 }
+
 /* 这是首页导航栏的样式 */
+@media screen and (min-width: 750px) {
+  
+  .text {
+    width: 500px;
+  }
+  .nav-bar img {
+    width: 100px;
+  }
+  .right {
+    height: 100px;
+    /* width: 30%; */
+    position: relative;
+    /* background-color: green; */
+  }
+}
 .nav-bar {
   height: 100px;
-  width: 800px;
+  width: 100%;
   /* background-color: red; */
   display: flex;
 }
 .nav-bar img {
   height: 100px;
-  width: 100px;
+  width: 30%;
 }
 .text {
   height: 100px;
-  width: 500px;
+  width: 50%;
   font-size: 25px;
   line-height: 100px;
   font-style: italic;
 }
-.right{
+.right {
   height: 100px;
-  width: 200px;
+  width: 30%;
   position: relative;
   /* background-color: green; */
 }
-.hidbox{
+.hidbox {
   position: relative;
   width: 50px;
   background-color: rgb(215, 211, 211);
@@ -118,11 +150,11 @@
   /* border-radius: 25px; */
   z-index: 9999;
 }
-.hidbox ul{
+.hidbox ul {
   height: 0px;
-  overflow: hidden; 
+  overflow: hidden;
 }
-.sp1{
+.sp1 {
   position: absolute;
   display: block;
   width: 30px;
@@ -132,7 +164,7 @@
   left: 11px;
   pointer-events: none;
 }
-.sp2{
+.sp2 {
   position: absolute;
   display: block;
   width: 30px;
@@ -142,99 +174,124 @@
   left: 11px;
   pointer-events: none;
 }
-.hidbox input{
+.hidbox input {
   height: 30px;
   width: 30px;
   margin-top: 10px;
   margin-left: 10px;
   opacity: 0;
 }
-.hidbox input:checked ~ul{
+.hidbox input:checked ~ ul {
   height: 100px;
-  width: 125px;
+  width: 84px;
   background-color: rgb(215, 211, 211);
   transition: height 1s;
 }
-.hidbox input:checked ~span{
+.hidbox input:checked ~ span {
   background-color: red;
 }
-.hidbox ul li a{
+.hidbox ul li a {
   color: blue;
   font-size: 20px;
 }
-.hidbox ul li{
+.hidbox ul li {
   margin-top: 20px;
   text-align: center;
 }
-.hidbox ul li a:hover{
+.hidbox ul li a:hover {
   color: red;
 }
-.hidbox input:checked ~.sp1{
+.hidbox input:checked ~ .sp1 {
   transform: rotate(-45deg);
   top: 20px;
 }
-.hidbox input:checked ~.sp2{
+.hidbox input:checked ~ .sp2 {
   transform: rotate(45deg);
   top: 20px;
 }
+@media screen and (min-width: 750px) {
+  .text {
+    width: 500px;
+  }
+  .nav-bar img {
+    width: 100px;
+  }
+  .right {
+    height: 100px;
+    width: 200px;
+    position: relative;
+  }
+  .hidbox input:checked ~ ul {
+    width: 125px;
+  }
+}
 /* 这是轮播图样式 */
 .carousel {
-  height: 350px;
-  width: 700px;
-  margin: 50px auto;
+  width: 350px;
+  height: 175px;
+  margin: 20px auto;
   position: relative;
 }
 .img-list li {
   position: absolute;
-  height: 350px;
-  width: 700px;
+  height: 175px;
+  width: 350px;
   opacity: 0;
   transition: opacity 1.5s;
 }
 .carousel img {
-  width: 700px;
-  height: 350px;
+  width: 350px;
+  height: 175px;
   object-fit: cover;
 }
 li.show-img {
   z-index: 1;
   opacity: 1;
 }
+@media screen and (min-width: 750px) {
+  .carousel,.img-list li,.carousel img{
+    height: 350px;
+    width: 700px;
+  }
+  .carousel{
+    margin: 50px auto;
+  }
+}
 /* 关于我们的介绍的样式 */
 .introduce,
 .fast-track {
-  height: 300px;
-  width: 700px;
+  height: 175px;
+  width: 350px;
   margin: 0 auto;
   position: relative;
 }
 .box1 .a {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   background-color: rgb(9, 130, 235);
 }
 .box1 .b {
   position: absolute;
   top: 0;
   left: 50px;
-  height: 50px;
-  width: 120px;
-  line-height: 50px;
+  height: 30px;
+  /* width: 120px; */
+  line-height: 30px;
   font-size: 25px;
   text-align: center;
 }
 .box2 {
   display: flex;
   justify-content: space-between;
-  margin-top: 65px;
+  margin-top: 45px;
 }
 .box2 div a {
   display: block;
-  height: 100px;
-  width: 150px;
-  font-size: 50px;
+  height: 50px;
+  width: 80px;
+  font-size: 20px;
   text-align: center;
-  line-height: 100px;
+  line-height: 50px;
   border: 2px blue solid;
   border-radius: 25px;
   color: black;
@@ -245,4 +302,30 @@ a {
 .box2 div a:hover {
   box-shadow: 0 0 5px blue;
   color: brown;
+}
+@media screen and (min-width: 750px) {
+  .introduce,
+.fast-track {
+  height: 350px;
+  width: 700px;
+}
+.box1 .a {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(9, 130, 235);
+}
+.box1 .b {
+  height: 50px;
+  width: 120px;
+  line-height: 50px;
+}
+.box2 {
+  margin-top: 65px;
+}
+.box2 div a {
+  height: 100px;
+  width: 150px;
+  font-size: 40px;
+  line-height: 100px;
+}
 }
