@@ -16,9 +16,9 @@ async function render(){
   let code = res.data.code
   let userInfo = res.data.data
   // code = 50000
-  userInfo.firstStatus = 2
-  userInfo.secondStatus = 2
-  userInfo.thirdStatus = 1
+  // userInfo.firstStatus = 2
+  // userInfo.secondStatus = 2
+  // userInfo.thirdStatus = 1
   // 找不到用户 提示用户先前往报名
   if(code === failCode) {
     document.querySelector('.pleaseToApply').style.display = 'block'
