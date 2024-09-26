@@ -19,7 +19,22 @@
   background: #fdfdfd;
   border: #fdfdfd;
   font-size: 20px;
+  text-decoration: none;
  }
+
+ a:link {
+    color: black;
+ }
+
+ a:visited {
+    color: black;
+ }
+
+ a:hover {
+    color: rgb(55, 108, 224);
+ }
+
+ 
 
  img{
   width: 20px;
@@ -101,10 +116,24 @@
   flex-direction: row;
   justify-content: center;
   margin-top: 30px;
+  height: 30px;
  }
 
  .subBtn {
+  
   background-color:rgb(22, 102, 223);
-  border-radius: 6px;
-  height: 36px;
+  height: 100%;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+
+ .con {
+    
+    color: black;
+    margin-top: 4px;
  }
