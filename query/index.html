@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>查询</title>
+    <link rel="stylesheet" href="../Reset/reset.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="total">
+        <!-- 头部图标 -->
+        <div class="top">
+            <img src="../imgs/头部图片.png" alt="头部图片" class="top-picture">
+        </div><br>
+
+        <div>
+          <a href="javascript:;" onclick="warning()" class="return" id="retA">&lt返回</a>
+        </div>
+
+        <br>
+
+        <div>
+            <div class="name"> 你的名字：
+                <span> <img src="./picture/星号.png" alt="必写" class="necessary"> </span>
+            </div>
+
+            <div>
+                <input type="text" placeholder="请输入真实姓名" class="trueName relName">
+            </div>        
+        </div><br>
+
+        <div>
+            <div class="name">你的专业：
+                <span> <img src="./picture/星号.png" alt="必写" > </span>
+            </div>
+            <div>
+                <input type="text" class="speciality trueName">
+            </div>
+        </div><br>
+
+        <div>
+            <div class="name">你的班级：
+                <span> <img src="./picture/星号.png" alt="必写" > </span>
+            </div>
+            <div>
+                <input type="text" class="className trueName">
+            </div>
+        </div><br>
+
+        <div>
+            <div class="name">联系方式：
+                <span> <img src="./picture/星号.png" alt="必写"> </span>
+            </div>
+            <div>
+                <input type="text" placeholder="QQ" class="qqNumber trueName"><br>
+                <input type="text" placeholder="手机号码" class="phoneNumber trueName">
+            </div>
+        </div><br>
+
+        <div>
+            <div class="name">意向选择：
+                <span> <img src="./picture/星号.png" alt="必写"> </span>
+            </div>
+
+            <div>
+                <select name="" id="" class="choice">
+                    <option value="" >Web前端大佬排兵布阵</option>
+                    <option value="" >java后台</option>
+                    <option value="" >产品</option>
+                </select>
+            </div>
+        </div><br>
+
+        <div class="bottom-content">
+            <div >
+                <img src="../imgs/二维码.png" alt="纳新二维码" class="join-picture">
+            </div>
+    
+            <div class="content">
+                <div>纳新群：291915031</div>
+                <div>霸面：3311818280</div>
+                <div>地址：家属区11号楼1单元0902</div>
+            </div>
+    
+        </div>
+
+        <div class="submit">
+            <button onclick="toResult()" class="subBtn">查询</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
