@@ -1,0 +1,3 @@
+// function goHome(){
+//     location.assign('../');
+// }

@@ -11,8 +11,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./recruit.js"></script>
     <link rel="stylesheet" href="./recruit.css" />
-    <link rel="stylesheet" href="./index.css">
-
+    
     
 
 
@@ -28,9 +27,10 @@
         <div>
         <!-- 返回 -->
         <!-- <img src="./picture/返回.png" alt="返回"> -->
-         <button onclick="warning()" class="return" id="warButton">
+         <!-- <button onclick="warning()" class="return" id="warButton">
              &lt返回
-        </button>
+        </button> -->
+            <a href="../02-join/join.html" onclick="warning()" class="return" id="retA">&lt返回</a>
         </div>
 
         <br>
@@ -148,7 +148,10 @@
         </div>
 
         <div class="submit">
-            <button class="subBtn">提交申请</button>
+            <!-- <button class="subBtn" onclick="subMit()">提交申请</button> -->
+            <a href="./submitSuccess.html" class="subBtn" id="subBtn" onclick="subMit()"> 
+                <div class="con">提交申请</div>
+            </a>
         </div>
     </div>
 </body>
