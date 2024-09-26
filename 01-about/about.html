@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AllSpark-about</title>
-    <link rel="stylesheet" href="../Reset/reset.css" />
-    <link rel="stylesheet" href="./about.css" />
-  </head>
-  <body>
-    <div class="about">
-      <div class="head"><img src="../imgs/头部图片.png" alt=""></div>
-      <!-- 返回按钮 -->
-      <div class="back">
-        <button onclick="history.go(-1)">
-          < 返回
-        </button>
-      </div>
-      <!-- 这个是轮播图 -->
-      <div class="carousel">
-        <ul class="img-list">
-          <li class="show-img"><img src="../imgs/生活照片1.jpg" /></li>
-          <li><img src="../imgs/生活照片2.jpg" /></li>
-          <li><img src="../imgs/生活照片6.jpg" /></li>
-          <li><img src="../imgs/生活照片7.jpg" /></li>
-        </ul>
-      </div>
 
-      <div class="introduce">
-        <div class="box1">
-          <div class="a"></div>
-          <div class="b">关于我们</div>
-        </div>
-        <div class="box3">
-          <ul class="article">
-            <hr />
-            <li>> <a href="../03-articles/front.html">web大佬必看指南</a></li>
-            <hr />
-            <li>> <a href="../03-articles/backend.html">什么？听说你想成为后端一把手</a></li>
-            <hr />
-            <li>> <a href="../03-articles/java.html">JAVA霸总独宠我</a></li>
-            <hr />
-            <li>> <a href="">开发必打，卑微产品</a></li>
-            <hr />
-            <li>> <a href="">工作室学习规划</a></li>
-            <hr />
-          </ul>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AllSpark-about</title>
+  <link rel="stylesheet" href="../Reset/reset.css" />
+  <link rel="stylesheet" href="./about.css" />
+</head>
+
+<body>
+  <div class="about">
+    <div class="head"><img src="../imgs/头部图片.png" alt=""></div>
+    <!-- 返回按钮 -->
+    <div class="back">
+      <button onclick="history.go(-1)">
+        < 返回 </button>
+    </div>
+    <!-- 这个是轮播图 -->
+    <div class="carousel">
+      <ul class="img-list">
+        <li class="show-img"><img src="../imgs/生活照片1.jpg" /></li>
+        <li><img src="../imgs/生活照片2.jpg" /></li>
+        <li><img src="../imgs/生活照片6.jpg" /></li>
+        <li><img src="../imgs/生活照片7.jpg" /></li>
+      </ul>
     </div>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
-      setTimeout(function auto() {
-        // 获取当前正在显示的图片
-        const show = document.querySelector(".img-list .show-img");
+    <div class="introduce">
+      <div class="box1">
+        <div class="a"></div>
+        <div class="b">关于我们</div>
+      </div>
+      <div class="box3">
+        <ul class="article">
+          <hr />
+          <li>> <a href="../03-articles/front.html">web大佬必看指南</a></li>
+          <hr />
+          <li>> <a href="../03-articles/backend.html">什么？听说你想成为后端一把手</a></li>
+          <hr />
+          <li>> <a href="../03-articles/java.html">JAVA霸总独宠我</a></li>
+          <hr />
+          <li>> <a href="../03-articles/product.html">开发必打，卑微产品</a></li>
+          <hr />
+          <li>> <a href="">工作室学习规划</a></li>
+          <hr />
+        </ul>
+      </div>
+    </div>
+  </div>
 
-        // 获取当前正在显示的元素的下一个兄弟元素(获取下一个图片)如果已经是最后一个图片了，就获取第一个图片
-        const show_next =
-          show.nextElementSibling ||
-          document.querySelector(".carousel .img-list li");
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    setTimeout(function auto() {
+      // 获取当前正在显示的图片
+      const show = document.querySelector(".img-list .show-img");
 
-        // 修改显示状态
-        show.classList.remove("show-img");
-        show_next.classList.add("show-img");
+      // 获取当前正在显示的元素的下一个兄弟元素(获取下一个图片)如果已经是最后一个图片了，就获取第一个图片
+      const show_next =
+        show.nextElementSibling ||
+        document.querySelector(".carousel .img-list li");
 
-        setTimeout(auto, 3000);
-      }, 3000);
-    </script>
-  </body>
+      // 修改显示状态
+      show.classList.remove("show-img");
+      show_next.classList.add("show-img");
+
+      setTimeout(auto, 3000);
+    }, 3000);
+  </script>
+</body>
+
 </html>
