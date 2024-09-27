@@ -41,18 +41,18 @@
             </div>
 
             <div>
-                <input type="text" placeholder="请输入真实姓名" class="trueName">
+                <input type="text" placeholder="请输入真实姓名" class="trueName relName" id="nameTrue">
             </div>        
         </div><br>
 
 
         <div>
-            <div class="name">你的专业：
+            <div class="name ">你的专业：
                 <span> <img src="./picture/星号.png" alt="必写" > </span>
             </div>
 
             <div>
-                <input type="text" class="trueName">
+                <input type="text" class="trueName speciality" id="majorName">
             </div>
         </div><br>
 
@@ -63,7 +63,7 @@
             </div>
 
             <div>
-                <input type="text" class="trueName">
+                <input type="text" class="trueName className" id="clasName">
             </div>
         </div><br>
 
@@ -74,8 +74,8 @@
             </div>
 
             <div>
-                <input type="text" placeholder="QQ" class="the"><br>
-                <input type="text" placeholder="手机号码" class="the">
+                <input type="text" placeholder="QQ" class="qqNumber the" id="qqNum"><br>
+                <input type="text" placeholder="手机号码" class="phoneNumber the" id="phNum">
             </div>
         </div><br>
 
@@ -86,10 +86,11 @@
             </div>
 
             <div>
-                <select name="" id="" class="choice">
-                    <option value="" >Web前端大佬排兵布阵</option>
-                    <option value="" >java后台</option>
-                    <option value="" >产品</option>
+                <select name="" id="intention" class="choice">
+                    <option value="前端" >Web前端大牛排兵布阵</option>
+                    <option value="后台" >java后台大佬赋予灵魂</option>
+                    <option value="产品" >产品经理指点江山</option>
+                    <option value="未定">未定方向无限可能</option>
                 </select>
             </div>
         </div><br>
@@ -98,8 +99,9 @@
         <div>
             <div  class="name">现在C语言水平如何/进度？</div><br>
 
-            <div>
-                <textarea name="" id="" class="textArea"></textarea>
+            <div class="text-area-container">
+                <textarea name="" id="myTextarea" class="textArea" rows="4" cols="50" oninput="textForbid()"></textarea>
+                <div id="charCount" class="char-count">0/100</div>
             </div>
         </div><br>
 
@@ -108,7 +110,7 @@
             <div class="name">备注</div><br>
 
             <div>
-                <textarea name="" id="" class="textArea"></textarea>
+                <textarea name="" id="remarks" class="textArea"></textarea>
             </div>
         </div><br>
 
@@ -119,15 +121,15 @@
             </div>
 
             <div>
-                <select name="" id="" class="data">
-                    <option value="">10月8日</option>
-                    <option value="">10月9日</option>
+                <select name="" id="da" class="data">
+                    <option value="108">10月8日</option>
+                    <option value="109">10月9日</option>
                 </select>
 
-                <select name="" id="" class="time">
-                    <option value="">9: 00 - 12: 00 am</option>
-                    <option value="">3: 00 - 5: 00 pm</option>
-                    <option value="">7: 00 - 9: 00 pm</option>
+                <select name="" id="ti" class="time">
+                    <option value="morning">9: 00 - 12: 00 am</option>
+                    <option value="afternoon">3: 00 - 5: 00 pm</option>
+                    <option value="evening">7: 00 - 9: 00 pm</option>
                 </select>
             </div>
         </div><br><br>
@@ -149,7 +151,7 @@
 
         <div class="submit">
             <!-- <button class="subBtn" onclick="subMit()">提交申请</button> -->
-            <a href="./submitSuccess.html" class="subBtn" id="subBtn" onclick="subMit()"> 
+            <a href="javascript:void(0)" class="subBtn" id="subBtn" onclick="subMit()"> 
                 <div class="con">提交申请</div>
             </a>
         </div>

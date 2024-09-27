@@ -74,6 +74,7 @@
   width: 92%;
   height: 90px;
   border-radius: 10px;
+  resize: none;
  }
 
  .data-name {
@@ -137,3 +138,16 @@
     color: black;
     margin-top: 4px;
  }
+
+ .char-count {  
+   position: absolute;  
+   bottom: 5px; /* 根据需要调整距离底部的位置 */  
+   right: 7%; /* 根据需要调整距离右侧的位置 */  
+   font-size: 12px; /* 根据需要调整字体大小 */  
+ }
+ 
+ .text-area-container {  
+   position: relative;  
+   width: 100%; /* 根据需要调整宽度 */  
+ }  
+ 
