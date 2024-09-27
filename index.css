@@ -94,238 +94,111 @@
   margin: 0 auto;
   margin-top: 270px;
 }
-
 /* 给网站主体设置样式 */
 .home {
   max-width: 800px;
-  border: 2px black solid;
   margin: 0 auto;
-}
-
-/* 这是首页导航栏的样式 */
-@media screen and (min-width: 750px) {
-  
-  .text {
-    width: 500px;
-  }
-  .nav-bar img {
-    width: 100px;
-  }
-  .right {
-    height: 100px;
-    /* width: 30%; */
-    position: relative;
-    /* background-color: green; */
-  }
-}
-.nav-bar {
-  height: 100px;
-  width: 100%;
-  /* background-color: red; */
-  display: flex;
-}
-.nav-bar img {
-  height: 100px;
-  width: 30%;
-}
-.text {
-  height: 100px;
-  width: 50%;
-  font-size: 25px;
-  line-height: 100px;
-  font-style: italic;
-}
-.right {
-  height: 100px;
-  width: 30%;
-  position: relative;
-  /* background-color: green; */
-}
-.hidbox {
-  position: relative;
-  width: 50px;
-  background-color: rgb(215, 211, 211);
-  margin: 0 auto;
-  margin-top: 35px;
-  /* border-radius: 25px; */
-  z-index: 9999;
-}
-.hidbox ul {
-  height: 0px;
-  overflow: hidden;
-}
-.sp1 {
-  position: absolute;
-  display: block;
-  width: 30px;
-  height: 2px;
-  background-color: #ffffff;
-  top: 15px;
-  left: 11px;
-  pointer-events: none;
-}
-.sp2 {
-  position: absolute;
-  display: block;
-  width: 30px;
-  height: 2px;
-  background-color: #ffffff;
-  top: 30px;
-  left: 11px;
-  pointer-events: none;
-}
-.hidbox input {
-  height: 30px;
-  width: 30px;
-  margin-top: 10px;
-  margin-left: 10px;
-  opacity: 0;
-}
-.hidbox input:checked ~ ul {
-  height: 100px;
-  width: 84px;
-  background-color: rgb(215, 211, 211);
-  transition: height 1s;
-}
-.hidbox input:checked ~ span {
-  background-color: red;
-}
-.hidbox ul li a {
-  color: blue;
-  font-size: 20px;
-}
-.hidbox ul li {
-  margin-top: 20px;
-  text-align: center;
-}
-.hidbox ul li a:hover {
-  color: red;
-}
-.hidbox input:checked ~ .sp1 {
-  transform: rotate(-45deg);
-  top: 20px;
-}
-.hidbox input:checked ~ .sp2 {
-  transform: rotate(45deg);
-  top: 20px;
-}
-@media screen and (min-width: 750px) {
-  .text {
-    width: 500px;
-  }
-  .nav-bar img {
-    width: 100px;
-  }
-  .right {
-    height: 100px;
-    width: 200px;
-    position: relative;
-  }
-  .hidbox input:checked ~ ul {
-    width: 125px;
-  }
-}
-/* 这是轮播图样式 */
-.carousel {
-  width: 350px;
-  height: 175px;
-  margin: 20px auto;
-  position: relative;
-}
-.img-list li {
-  position: absolute;
-  height: 175px;
-  width: 350px;
-  opacity: 0;
-  transition: opacity 1.5s;
-}
-.carousel img {
-  width: 350px;
-  height: 175px;
-  object-fit: cover;
-}
-li.show-img {
-  z-index: 1;
-  opacity: 1;
-}
-@media screen and (min-width: 750px) {
-  .carousel,.img-list li,.carousel img{
-    height: 350px;
-    width: 700px;
-  }
-  .carousel{
-    margin: 50px auto;
-  }
-}
-/* 关于我们的介绍的样式 */
-.introduce,
-.fast-track {
-  height: 175px;
-  width: 350px;
-  margin: 0 auto;
-  position: relative;
-}
-.box1 .a {
-  height: 30px;
-  width: 30px;
-  background-color: rgb(9, 130, 235);
-}
-.box1 .b {
-  position: absolute;
-  top: 0;
-  left: 50px;
-  height: 30px;
-  /* width: 120px; */
-  line-height: 30px;
-  font-size: 25px;
-  text-align: center;
-}
-.box2 {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 45px;
-}
-.box2 div a {
-  display: block;
-  height: 50px;
-  width: 80px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 50px;
-  border: 2px blue solid;
-  border-radius: 25px;
-  color: black;
 }
 a {
   text-decoration: none;
 }
-.box2 div a:hover {
-  box-shadow: 0 0 5px blue;
-  color: brown;
-}
-@media screen and (min-width: 750px) {
-  .introduce,
-.fast-track {
-  height: 350px;
-  width: 700px;
-}
-.box1 .a {
-  height: 50px;
-  width: 50px;
-  background-color: rgb(9, 130, 235);
-}
-.box1 .b {
-  height: 50px;
-  width: 120px;
-  line-height: 50px;
-}
-.box2 {
-  margin-top: 65px;
-}
-.box2 div a {
+/*导航栏 */
+.nav-bar {
   height: 100px;
-  width: 150px;
-  font-size: 40px;
-  line-height: 100px;
+  width: 100%;
+  box-shadow: 0 0 5px black;
 }
+.nav-bar img {
+  height: 100px;
+  width: 100%;
 }
+@media screen and (min-width: 750px){
+  .nav-bar {
+    height: 150px;
+  }
+  .nav-bar img {
+    height: 150px;
+  }
+}
+/* 空白区域待定 */
+.kb {
+  height: 200px;
+  width: 100%;
+}
+/* 首页文字样式 */
+.text-box {
+  height: 250px;
+  width: 100%;
+  /* background-color: gray; */
+  box-shadow: 0 0 5px black;
+  padding: 10px 0px;
+}
+.article {
+  background-color: white;
+  color: #317bea;
+}
+.article li {
+  height: 30px;
+  line-height: 30px;
+  font-size: large;
+}
+.article li a {
+  color: gray;
+}
+.article li a:hover{
+  color: #317bea;
+  text-shadow: 0 0 5px #317bea;
+}
+/* 底部艺术字 */
+.art {
+  height: 200px;
+  width: 100%;
+  box-shadow: 0 0 5px black;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  line-height: 200px;
+}
+.art div{
+  width: 30%;
+  text-align: center;
+}
+.art div a {
+  height: 100px;
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  color: white; /* 中间颜色为白色 */
+  text-align: center;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black; /* 创建黑色边框效果 */
+}
+.text2{
+  font-size: 50px;
+}
+.text1, .text3{
+  font-size: 30px;
+}
+.art div a:hover {
+  color: #317bea;
+  text-shadow: none;
+}
+/* 页脚样式 */
+footer {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #dadada;
+  box-shadow: 0 0 4px #abafaf;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 1rem;
+  color: #272727;
+  box-shadow: 0 0 5px black;
+}
+.footer-con {
+  padding-top: 20px;
+  font-size: 14px;
+  color: #828f8f;
+}
+
