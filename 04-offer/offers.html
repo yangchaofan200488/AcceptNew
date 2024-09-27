@@ -82,13 +82,24 @@
 
         <!-- 3 -->
         <article class="article bgc">
+          <h4 class="text_center">加入我们</h4>
+          <p class="text_center">
+            快来加入AllSpark工作室，与优秀的学姐学长一起成长，创造更多的精彩！
+          </p>
+          <div class="btn-container">
+            <button id="btnleft" class="Mybtn">立即加入</button>
+            <button id="btnright" class="Mybtn">了解更多</button>
+          </div>
+        </article>
+        <!-- 4 -->
+        <article class="article bgc">
           <h4 class="text_center">谢谢你因为有你~</h4>
           <p class="text_center">
             从12人到200余人，<br />AllSpark工作室规模不断扩大，<br />走出越来越多的优秀青年。<br />由衷感谢每一位为AllSpark发展做出贡献的成员。<br />青山不改,绿水长流,<br />他日江湖再见!
           </p>
           <img src="../imgs/生活照片2.jpg" alt="合照" />
         </article>
-
+        <!-- 5 -->
         <article class="article bgc_white">
           <img src="../imgs/AllSparkLogo.jpg" alt="AllSparklogo" />
         </article>
@@ -118,6 +129,7 @@
 
     <script>
       //侧边拦
+
       window.onscroll = function () {
         var scrollPos =
           window.pageYOffset || document.documentElement.scrollTop;
@@ -128,6 +140,25 @@
           sidebar.classList.remove("show");
         }
       };
+
+      // 这里记得加网址！！！Button跳转
+      document.getElementById("btnleft").addEventListener("click", function () {
+        window.location.href = "../Recruitment/recruit.html";
+        this.classList.add("clicked");
+        setTimeout(() => {
+          this.classList.remove("clicked");
+        }, 300);
+      });
+      // 最好不要用getElementByClassName  因为导入bootstrap 可能出问题
+      document
+        .getElementById("btnright")
+        .addEventListener("click", function () {
+          window.location.href = "../01-about/about.html";
+          this.classList.add("clicked");
+          setTimeout(() => {
+            this.classList.remove("clicked");
+          }, 300);
+        });
     </script>
   </body>
 </html>
