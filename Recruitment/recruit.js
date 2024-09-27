@@ -64,7 +64,7 @@ function subMit(){
     
     if(isJudge === true)//跳转提交成功页面
     {
-         //btn.href = './submitSuccess.html'
+         btn.href = './submitSuccess.html'
          //http://8.148.22.124:11451/doc.html#/default/user-controller/addUsingPOST   接口
          //添加用户发送请求
 
