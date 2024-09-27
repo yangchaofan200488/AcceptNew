@@ -36,16 +36,6 @@
   text-align: center;
   text-shadow: 10px 10px 5px black;
 }
-@media screen and (min-width: 750px) {
-  .text-list ul li {
-    font-size: 60px;
-    text-shadow: 15px 15px 10px black;
-    height: 60px;
-    width: 45px;
-    line-height: 60px;
-    text-align: center;
-  }
-}
 @keyframes dh {
   0% {
     opacity: 0;
@@ -103,35 +93,28 @@ a {
   text-decoration: none;
 }
 /*导航栏 */
-.nav-bar {
-  height: 100px;
-  width: 100%;
-  box-shadow: 0 0 5px black;
-}
-.nav-bar img {
-  height: 100px;
+.nav-bar{
   width: 100%;
 }
-@media screen and (min-width: 750px){
-  .nav-bar {
-    height: 150px;
-  }
-  .nav-bar img {
-    height: 150px;
-  }
+.nav-bar img{
+  width: 100%;
 }
 /* 空白区域待定 */
-.kb {
-  height: 200px;
-  width: 100%;
-}
 /* 首页文字样式 */
 .text-box {
+  position: absolute;
   height: 250px;
-  width: 100%;
+  width: 90%;
   /* background-color: gray; */
   box-shadow: 0 0 5px black;
   padding: 10px 0px;
+  border-radius: 15px;
+  margin: 0 auto;
+  bottom: 0;
+  top: 380px;
+  left: 0;
+  right: 0;
+  background-color: white;
 }
 .article {
   background-color: white;
@@ -149,56 +132,57 @@ a {
   color: #317bea;
   text-shadow: 0 0 5px #317bea;
 }
+@media screen and (min-width:700px) {
+  .text-box{
+    width: 750px;
+    top: 700px;
+  }
+}
 /* 底部艺术字 */
 .art {
-  height: 200px;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
   width: 100%;
   box-shadow: 0 0 5px black;
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
-  line-height: 200px;
+  line-height: 60px;
+  background-color: whitesmoke;
 }
 .art div{
   width: 30%;
   text-align: center;
 }
 .art div a {
-  height: 100px;
-  width: 30%;
+  height: 50px;
+  width: 100px;
   text-align: center;
   font-weight: bold;
   color: white; /* 中间颜色为白色 */
-  text-align: center;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black; /* 创建黑色边框效果 */
 }
-.text2{
-  font-size: 50px;
-}
-.text1, .text3{
-  font-size: 30px;
+.art div a div{
+  position: absolute;
+  font-size: 10px;
+  top: 12px;
 }
 .art div a:hover {
   color: #317bea;
   text-shadow: none;
 }
-/* 页脚样式 */
-footer {
-  width: 100%;
-  margin-top: 10px;
-  background-color: #dadada;
-  box-shadow: 0 0 4px #abafaf;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  font-size: 1rem;
-  color: #272727;
-  box-shadow: 0 0 5px black;
+.text1 img,.text2 img{
+  height: 30px;
+  width: 30px;
 }
-.footer-con {
-  padding-top: 20px;
-  font-size: 14px;
-  color: #828f8f;
+.text3 img{
+  height: 22px;
+  margin-bottom: 4px;
 }
-
+@media screen and (min-width:700px) {
+  .art{
+    width: 800px;
+  }
+}
