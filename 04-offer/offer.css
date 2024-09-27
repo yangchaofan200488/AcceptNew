@@ -273,12 +273,12 @@ footer {
   transition: background-color 0.2s ease;
 }
 
-/* #Mybtn:active {
-  background-color: grey;
-} */
-.clicked {
+.Mybtn:active {
   background-color: grey;
 }
+/* .clicked {
+  background-color: grey;
+} */
 .btn-container #btnleft {
   margin-right: 2rem;
 }
