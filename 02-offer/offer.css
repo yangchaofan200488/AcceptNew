@@ -254,3 +254,31 @@ footer {
   font-size: 14px;
   color: #828f8f;
 }
+
+/* button */
+.article .btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.article .Mybtn {
+  flex: 1;
+  margin: 0 0.7rem;
+  padding: 0.6rem 0.7rem;
+  text-align: center;
+  background-color: rgb(52, 91, 232);
+  color: white;
+  border: none;
+  border-radius: 1.6rem;
+  transition: background-color 0.2s ease;
+}
+
+.Mybtn:active {
+  background-color: grey;
+}
+/* .clicked {
+  background-color: grey;
+} */
+.btn-container #btnleft {
+  margin-right: 2rem;
+}
