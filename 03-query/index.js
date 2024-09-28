@@ -29,5 +29,5 @@ function toResult(){
   }
   sessionStorage.setItem('qqNumber', JSON.stringify(qqNumber))
   sessionStorage.setItem('phoneNumber', JSON.stringify(phoneNumber))
-  location.href = '../result/index.html'
+  location.href = '../05-result/index.html'
 }

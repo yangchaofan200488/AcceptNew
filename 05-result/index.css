@@ -1,9 +1,15 @@
+body {
+  background-color: #f2f2f2;
+}
+
 /* 给网站主体设置样式 */
 .main-body {
+  background-color: #ffffff;
   max-width: 800px;
   /* border: 2px black solid; */
   margin: 0 auto;
   padding-bottom: 50px;
+  height: 760px;
 }
 
 /* 这是顶部导航栏的样式（包括背景样式） */
@@ -39,7 +45,8 @@ button {
 .pleaseToApply{
   display: none;
   height: 500px;
-  line-height: 500px;
+  padding-top: 100px;
+  /* line-height: 500px; */
   margin-top: 40px;
   font-size: 18px;
   font-weight: bold;
