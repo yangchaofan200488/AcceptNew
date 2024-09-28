@@ -4,7 +4,7 @@ function warning(){
     // let button = document.getElementById('warButton');
     var retA = document.getElementById('retA');
     var isJudge = confirm('尚未提交申请，是否确认返回');
-    if(isJudge === true) retA.href = '../02-join/join.html';//返回加入我们页面
+    if(isJudge === true) retA.href = '../index.html';//返回加入我们页面
     else retA.href = 'javascript:void(0)';
     
 
