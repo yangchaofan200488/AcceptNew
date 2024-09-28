@@ -64,7 +64,7 @@ function subMit(){
     
     if(isJudge === true)//跳转提交成功页面
     {
-         btn.href = './submitSuccess.html'
+         
          //http://8.148.22.124:11451/doc.html#/default/user-controller/addUsingPOST   接口
          //添加用户发送请求
 
@@ -142,31 +142,40 @@ function subMit(){
 
           // 发起一个post请求
           async function render() {
-            await axios({
+            var res = await axios({
               method: "POST",
               url: "http://8.148.22.124:11451/user/add",
               data: {
                 name:nameTrue,
                 className:sumName,
-                CLevel:cLevel,
+                clevel:cLevel,
                 firstTime:firstTime,
                 intention:inten,
                 phoneNumber:phNum,
                 qqNumber:qqNum,
                 remarks:remarks
               }
-          }).then(function (response) {
-            console.log(response);
-          }).catch(function (error) {
-            console.log(error);
-          });;
-
-          //console.log(res);
+            })
+            console.log(res);
+            if(res.data.code === 20000){
+              location.href = './submitSuccess.html';
+              console.log(res.data.code);
+              
+            }
+            else location.href = '../index.html';
+              //console.log(JSON.stringify(nameTrue));
           
-        
-            console.log(JSON.stringify(nameTrue));
+            }
+          // }).then(function (response) {
+          //   console.log(response.data.code);
             
-          }
+          // }).catch(function (error) {
+          //   console.log(error);
+          // });;
+
+          
+            
+          
 
         render();
 
