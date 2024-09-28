@@ -1,5 +1,3 @@
-/* 网上抄的 */
-
 html {
   font-size: 16px;
   /* 默认根元素字体大小 */
@@ -222,7 +220,7 @@ header p {
   /* 垂直居中 */
   color: rgb(255, 255, 255);
   background-size: cover;
-  background-image: url(../03-articles/svg/top-1.svg);
+  background-image: url(../01-articles/svg/top-1.svg);
   /* 深色文件引用地址 */
   background-position: center;
 }
@@ -233,7 +231,7 @@ header p {
 }
 
 #sidebar a:hover {
-  background-image: url(../03-articles/svg/top-2.svg);
+  background-image: url(../01-articles/svg/top-2.svg);
   /* 浅色引用地址 */
 }
 
@@ -263,8 +261,8 @@ footer {
 }
 .article .Mybtn {
   flex: 1;
-  margin: 0 0.7rem;
-  padding: 0.6rem 0.7rem;
+  margin: 0 2.7rem;
+  padding: 0.6rem 0.5rem;
   text-align: center;
   background-color: rgb(52, 91, 232);
   color: white;
@@ -279,6 +277,6 @@ footer {
 /* .clicked {
   background-color: grey;
 } */
-.btn-container #btnleft {
+/* .btn-container #btnleft {
   margin-right: 2rem;
-}
+} */
