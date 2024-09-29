@@ -106,12 +106,12 @@ a {
   height: 250px;
   width: 90%;
   /* background-color: gray; */
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px #317bea;
   padding: 10px 0px;
   border-radius: 15px;
   margin: 0 auto;
   bottom: 0;
-  top: 380px;
+  top: 55%;
   left: 0;
   right: 0;
   background-color: white;
@@ -135,7 +135,7 @@ a {
 @media screen and (min-width:700px) {
   .text-box{
     width: 750px;
-    top: 700px;
+    top: 100%;
   }
 }
 /* 底部艺术字 */
@@ -185,4 +185,21 @@ a {
   .art{
     width: 800px;
   }
+}
+/* 页脚样式 */
+footer {
+  width: 100%;
+  background-color: #a0c7f2;
+  box-shadow: 0 0 4px #abafaf;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 1rem;
+  color: #272727;
+}
+
+.footer-con {
+  padding-top: 20px;
+  font-size: 14px;
+  color: #828f8f;
 }
