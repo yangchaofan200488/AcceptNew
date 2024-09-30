@@ -19,6 +19,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
 }
 .text-list ul li {
   list-style: none;
