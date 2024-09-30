@@ -14,10 +14,23 @@
   bottom: 0;
   background-color: #ffffff;
 }
-.text-list ul {
+.img-box img {
+  height: 200px;
+  width: 200px;
+}
+.img-box {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 240px;
+  position: relative;
+}
+.text-list{
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 200px;
+}
+.text-list ul {
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
@@ -76,16 +89,7 @@
 .text-list ul li:nth-child(8) {
   animation-delay: 1.4s;
 }
-.img-box img {
-  height: 200px;
-  width: 200px;
-}
-.img-box {
-  height: 200px;
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 270px;
-}
+
 /* 给网站主体设置样式 */
 .home {
   max-width: 800px;
