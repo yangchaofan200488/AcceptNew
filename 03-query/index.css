@@ -115,10 +115,12 @@ body {
  }
 
  .subBtn {
+  text-align: center;
   background-color:rgb(49, 123, 234);
-  border: none;
+  /* border: none; */
   border-radius: 6px;
   height: 36px;
+  line-height: 36px;
   width: 80px;
   cursor: pointer;
  }
